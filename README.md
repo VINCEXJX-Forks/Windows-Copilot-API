@@ -214,6 +214,7 @@ timeout — so the exact break point is flaky and may vary between runs.
 - **Sign in once, then reuse.** The cached token refreshes automatically; you only re-sign-in if the session fully expires.
 - **No daily limit, but be reasonable.** Microsoft doesn't impose a daily chat cap, but please use it in moderation, and don't spam or hammer it with automated bulk requests.
 - **One model.** Copilot has no model picker, so the server advertises a single model named `copilot`.
+- **Roughly GPT-4 class.** On GPQA Diamond (198 graduate-level questions, closed-book) it scores **40.9%**, which puts it in the GPT-4 family rather than the reasoning tier (o1/o3). Measured with [tests/gpqa_bench.py](tests/gpqa_bench.py).
 - **Your session is private.** Everything in `session/` (cookies + token) stays on your machine and is git-ignored.
 
 ---
